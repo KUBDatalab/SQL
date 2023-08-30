@@ -1,4 +1,4 @@
-# FIXME Lesson title
+# SQL introduction
 
 This repository generates the corresponding lesson website from [The Carpentries](https://carpentries.org/) repertoire of lessons. 
 
