@@ -2,24 +2,14 @@
 title: Introduction to SQL
 teaching: 15
 exercises: 0
----
-
-::::::::::::::::::::::::::::::::::::::: objectives
-
+objectives:
 - Define a relational database.
 - Explain what SQL is and why to use it.
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: questions
-
+questions:
 - What is SQL?
 - Why is it significant?
 - What is the relationship between a relational database and SQL?
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
+---
 ## What is SQL?
 
 **S**tructured **Q**uery **L**anguage, or SQL (sometimes pronounced "sequel"), is a powerful language used to interrogate and
