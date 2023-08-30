@@ -2,6 +2,9 @@
 title: Selecting and sorting data
 teaching: 15
 exercises: 5
+keypoints:
+- SQL is ideal for querying databases
+- SQL queries have a basic query structure starting with `SELECT` field FROM table with additional keywords and criteria that can be used.
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
@@ -111,32 +114,19 @@ FROM filmsAndSeries
 ORDER BY tmdb_score DESC, release_year ASC;
 ```
 
-:::::::::::::::::::::::::::::::::::::::  challenge
 
-## Challenge
 
-Write a query that returns `Title`, `imdb_score`, `release_year` and `imdb_votes` from
-the filmsAndSeries table, ordered by the top number of votes and alphabetically by title.
-
-:::::::::::::::  solution
-
-## Solution
-
-```sql
-SELECT title, imdb_score, release_year, imdb_votes
-FROM filmsAndSeries
-ORDER BY imdb_votes DESC, title ASC;
-```
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: keypoints
-
-- SQL is ideal for querying databases
-- SQL queries have a basic query structure starting with `SELECT` field FROM table with additional keywords and criteria that can be used.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
+> ## Challenge
+> 
+> Write a query that returns `Title`, `imdb_score`, `release_year` and `imdb_votes` from
+> the filmsAndSeries table, ordered by the top number of votes and alphabetically by title.
+> > ## Solution
+> > 
+> > ```sql
+> > SELECT title, imdb_score, release_year, imdb_votes
+> > FROM filmsAndSeries
+> > ORDER BY imdb_votes DESC, title ASC;
+> > ```
+> {: .solution}
+{: .challenge}
 
