@@ -9,6 +9,9 @@ questions:
 - What is SQL?
 - Why is it significant?
 - What is the relationship between a relational database and SQL?
+keypoints:
+- SQL is a powerful language used to interrogate and manipulate relational databases.
+- People working in library- and information-related roles have skills that allow them to use SQL to organize and access data.
 ---
 ## What is SQL?
 
@@ -122,12 +125,5 @@ Different database software/platforms have different names and sometimes differe
 | text or string         | and combination of numbers, letters, symbols.  Platforms may have different data types: one for variables with a set number of characters - e.g., a zip code or postal code, and one for variables with an open number of characters, e.g., an address or description variable. | TEXT                                                                                                                  | 
 | date or datetime       | depending on the platform, may represent the date and time or the number of days since a specified date.  This field often has a specified format, e.g., YYYY-MM-DD                                                                                                             | doesn't exist - need to use built-in date and time functions and store dates in real, integer, or text formats.  See [Section 2.2 of SQLite documentation](https://www.sqlite.org/datatype3.html#date_and_time_datatype) for more details. | 
 | blob                   | a Binary Large OBject can store a large amount of data, documents, audio or video files.                                                                                                                                                                                        | BLOB                                                                                                                  | 
-
-:::::::::::::::::::::::::::::::::::::::: keypoints
-
-- SQL is a powerful language used to interrogate and manipulate relational databases.
-- People working in library- and information-related roles have skills that allow them to use SQL to organize and access data.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
