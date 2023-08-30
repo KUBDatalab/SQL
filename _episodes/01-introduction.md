@@ -8,7 +8,7 @@ exercises: 0
 
 - Define a relational database.
 - Explain what SQL is and why to use it.
-- Identify library and information skills that relate to using SQL
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
