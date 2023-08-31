@@ -8,6 +8,10 @@ objectives:
 - Learn how to use comparison keywords such as `LIKE` in a statement.
 questions:
 - How can I filter data?
+keypoints:
+- Use `WHERE` to filter and retrieve data based on specific conditions.
+- Use `AND, OR, and NOT` to add additional conditions.
+- Use the comparison keyword `LIKE` and wildcard characters such as `%` to match patterns.
 ---
 
 
@@ -65,29 +69,25 @@ To learn more about other comparison keywords you can use, see Beginner SQL Tuto
 
 
 
-## Challenge
+> ## Challenge
 
 > Write a query that returns the `title`, `description`,  `release_year`
 > for all movies and series that have "monty python" in the title or description.
 
 
 
-## Solution
+>> ## Solution
 
 > >```sql
 > >SELECT title, description, release_year
 > >FROM filmsAndSeries
 > >WHERE title LIKE "%Monty Python%" OR description like "%Monty Python%" ;
 > >```
+> {: .solution}
 
 
 > You can continue to add or chain conditions together and write more advanced queries.
-
-:::::::::::::::::::::::::::::::::::::::: keypoints
-
-- Use `WHERE` to filter and retrieve data based on specific conditions.
-- Use `AND, OR, and NOT` to add additional conditions.
-- Use the comparison keyword `LIKE` and wildcard characters such as `%` to match patterns.
+{: .challenge}
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
