@@ -7,12 +7,12 @@ objectives:
 - Explain what SQL is and why to use it.
 questions:
 - What is SQL?
-- Why is it significant?
+- Why is SQL significant?
 - What is the relationship between a relational database and SQL?
 keypoints:
 - SQL is a powerful language used to interrogate and manipulate relational databases.
-- People working in library- and information-related roles have skills that allow them to use SQL to organize and access data.
 ---
+
 ## What is SQL?
 
 **S**tructured **Q**uery **L**anguage, or SQL (sometimes pronounced "sequel"), is a powerful language used to interrogate and
@@ -31,6 +31,12 @@ linked to each other when a field in one table can be matched to a field in anot
 table. SQL *queries* are the commands that let you look up data in a database or
 make calculations based on columns.
 
+Data types help
+quality control of entries - you will receive an error if you try to enter a word
+into a field that should contain a number. Understanding the nature of relational
+databases, and using SQL, will help you in using databases in programming languages
+such as R or Python.
+
 ## Why use SQL?
 
 SQL is well established and has been around since the 1970s. It is still widely used
@@ -40,16 +46,17 @@ SQL lets you keep the data separate from the analysis. There is no risk of
 accidentally changing data when you are analysing it. If the data is updated,
 a saved query can be re-run to analyse the new data.
 
-SQL is optimised for handling large amounts of data. Data types help
-quality control of entries - you will receive an error if you try to enter a word
-into a field that should contain a number. Understanding the nature of relational
-databases, and using SQL, will help you in using databases in programming languages
-such as R or Python.
+SQL is optimised for handling large amounts of data. 
 
 Many web applications (including WordPress and ecommerce sites like Amazon) run on a SQL (relational) database. Understanding SQL is the first step in eventually building custom web applications that can serve data to users.
 
 
 ## Database Management Systems
+
+A database management system is a software tool that enables users to manage 
+a database easily. It allows users to access and interact with the underlying data 
+in the database. These actions can range from simply querying data to defining 
+database schemas that fundamentally affect the database structure.
 
 There are a number of different database management systems for working with
 relational data. We're going to use SQLite today, but basically everything we
@@ -69,15 +76,6 @@ Data tab above the table data.
 
 If we want to write a query, we click on the Execute SQL tab.
 
-There are two ways to add new data to a table without writing SQL:
-
-1. Enter data into a CSV file and append
-2. Click the "Browse Data" tab, then click the "New Record" button.
-
-The steps for adding data from a CSV file are:
-
-1. Choose "File" > "Import" > "Table" from CSV file...
-2. DB Browser for SQLite will prompt you if you want to add the data to the existing table.
 
 ## Dataset Description
 
@@ -109,11 +107,9 @@ The data we will be using consists 4 tables of movie or series titles.
 
 
 
-## A Note About Data Types
+## SQL Data Type Quick Reference
 
 The main data types that are used in imdb database are `INTEGER` and `TEXT` which define what value the table column can hold.
-
-## SQL Data Type Quick Reference
 
 Different database software/platforms have different names and sometimes different definitions of data types, so you'll need to understand the data types for any platform you are using.  The following table explains some of the common data types and how they are represented in SQLite; [more details available on the SQLite website](https://www.sqlite.org/datatype3.html).
 
