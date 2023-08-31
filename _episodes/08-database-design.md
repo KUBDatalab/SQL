@@ -2,19 +2,11 @@
 title: Database design
 teaching: 25
 exercises: 20
----
-
-::::::::::::::::::::::::::::::::::::::: objectives
-
+objectives:
 - Use Entity Relationship Diagrams to visualise and structure your data.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: questions
-
+questions:
 - What is database design?
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
+---
 
 ## Spreadsheets
 
