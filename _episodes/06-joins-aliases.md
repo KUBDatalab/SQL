@@ -2,21 +2,16 @@
 title: Joins and aliases
 teaching: 25
 exercises: 20
----
-
-::::::::::::::::::::::::::::::::::::::: objectives
-
+objectives:
 - Understand how to link tables together via joins.
 - Understand when it is valuable to use aliases or shorthand.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: questions
-
+questions:
 - How do I join two tables if they share a common point of information?
 - How can I use aliases to improve my queries?
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
+keypoints:
+- Joining two tables in SQL is an good way to analyse datasets, especially when both datasets provide partial answers to questions you want to ask.
+- Creating aliases allows us to spend less time typing, and more time querying!
+---
 
 ## Joins
 
@@ -55,7 +50,7 @@ ON filmsAndSeries.id = genres.id;
 Joins can be combined with sorting, filtering, and aggregation.  So, if we wanted the average scores for movies in each genre, we can use the following query:
 
 ```sql
-SELECT genres.genre,  ROUND(AVG(moviesAndSeries.imdb_score), 2), ROUND(AVG(moviesAndSeries.imdb_score), 2)
+SELECT genres.genre,  ROUND(AVG(filmsAndSeries.imdb_score), 2), ROUND(AVG(filmsAndSeries.tmdb_score), 2)
 FROM genres
 JOIN filmsAndSeries
 USING (id)
@@ -67,25 +62,24 @@ The `ROUND` function allows us to round the score number returned by the `AVG` f
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Challenge
+> ## Challenge
 
-Write a query that `JOINS` the `genres` and `filmAndSeries` tables and that returns the `genre`, total number of series and average number seasons for every genre.
+> Write a query that `JOINS` the `genres` and `filmAndSeries` tables and that returns the `genre`, total number of series and average number seasons for every genre.
 
-:::::::::::::::  solution
 
-## Solution
 
-```sql
-SELECT genres.genre, count(*), avg(filmsAndSeries.seasons)
-FROM filmsAndSeries
-JOIN genres
-USING (id)
-GROUP BY genres.genre;
-```
+> > ## Solution
 
-:::::::::::::::::::::::::
+> > ```sql
+> > SELECT genres.genre, count(*), avg(filmsAndSeries.seasons)
+> > FROM filmsAndSeries
+> > JOIN genres
+> > USING (id)
+> > GROUP BY genres.genre;
+> > ```
+> {: .solution}
+{: .challenge}
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 You can also join multiple tables. For example:
 
@@ -98,31 +92,26 @@ JOIN productionCountries
 ON productionCountries.id = genres.id;
 ```
 
-:::::::::::::::::::::::::::::::::::::::  challenge
 
-## Challenge:
+> ## Challenge:
 
-Write a query that returns the `title`, number of
-production countries, number of genres, ordered by number of production countries in descending order.
+> Write a query that returns the `title`, number of
+> production countries, number of genres, ordered by number of production countries in descending order.
 
-:::::::::::::::  solution
+> > ## Solution
 
-## Solution
-
-```sql
-SELECT filmsAndSeries.title, COUNT(DISTINCT productionCountries.Country), COUNT(DISTINCT genres.genre)
-FROM filmsAndSeries
-JOIN productionCountries
-USING (id)
-JOIN genres
-USING (id)
-GROUP BY title
-ORDER BY COUNT(DISTINCT Country) DESC;
-```
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
+> > ```sql
+> > SELECT filmsAndSeries.title, COUNT(DISTINCT productionCountries.Country), COUNT(DISTINCT genres.genre)
+> > FROM filmsAndSeries
+> > JOIN productionCountries
+> > USING (id)
+> > JOIN genres
+> > USING (id)
+> > GROUP BY title
+> > ORDER BY COUNT(DISTINCT Country) DESC;
+> > ```
+>{: .solution}
+{:.challenge}
 
 There are different types of joins which you can learn more about at [SQL Joins Explained](https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/).
 
@@ -146,6 +135,7 @@ SELECT fas.title AS title, pc.Country AS country
 FROM filmsAndSeries AS fas
 JOIN productionCountries  AS pc
 ON fas.id = pc.id;
+WHERE country = "Denmark"
 ```
 
 The `AS` isn't technically required, so you could do:
@@ -156,12 +146,5 @@ FROM filmsAndSeries fas;
 ```
 
 But using `AS` is much clearer so it is good style to include it.
-
-:::::::::::::::::::::::::::::::::::::::: keypoints
-
-- Joining two tables in SQL is an good way to analyse datasets, especially when both datasets provide partial answers to questions you want to ask.
-- Creating aliases allows us to spend less time typing, and more time querying!
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
