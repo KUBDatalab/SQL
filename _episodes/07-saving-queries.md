@@ -2,20 +2,14 @@
 title: Saving queries
 teaching: 20
 exercises: 10
----
-
-::::::::::::::::::::::::::::::::::::::: objectives
-
+objectives:
 - Learn how to save repeated queries as 'Views' and how to drop them.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: questions
-
+questions:
 - How can I save a query for future use?
 - How can I remove a saved query?
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
+keypoints
+- Saving queries as 'Views' allows you to save time and avoid repeating the same operation more than once.
+---
 
 ## Saving queries for future use
 
@@ -41,7 +35,7 @@ Now, we will be able to access these results with a much shorter notation:
 
 ```sql
 SELECT *
-FROM production_count;
+FROM production_counts;
 ```
 
 Assuming we do not need this view anymore, we can remove it from the database.
@@ -56,38 +50,30 @@ icon at the top of the Execute SQL tab and then clicking **Save as view**.
 Whatever method you use to create a view, it will appear in the list of views
 under the Database Structure tab.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
 
-## Challenge
 
-Write a `CREATE VIEW` query that `JOINS` the `filmsAndSeries` table with the
-`productionCountries` table on `id` and returns the `AVG` of imdb_score
-grouped by the `Country` in `DESC` order.
+> ## Challenge
 
-:::::::::::::::  solution
+> Write a `CREATE VIEW` query that `JOINS` the `filmsAndSeries` table with the
+> `productionCountries` table on `id` and returns the `AVG` of imdb_score
+> grouped by the `Country` in `DESC` order.
 
-## Solution
 
-```sql
-CREATE VIEW scores_by_country AS
-SELECT countries.country, AVG(filmsAndSeries.imdb_score) as score
-FROM productionCountries
-JOIN filmsAndSeries
-USING (id)
-JOIN countries
-ON countries.code = productionCountries.Country
-GROUP BY countries.country
-ORDER BY score DESC
-```
+> > ## Solution
 
-:::::::::::::::::::::::::
+> > ```sql
+> > CREATE VIEW scores_by_country AS
+> > SELECT countries.country, AVG(filmsAndSeries.imdb_score) as score
+> > FROM productionCountries
+> > JOIN filmsAndSeries
+> > USING (id)
+> > JOIN countries
+> > ON countries.code = productionCountries.Country
+> > GROUP BY countries.country
+> > ORDER BY score DESC
+> > ```
+> {:.solution}
+{: .solution}
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: keypoints
-
-- Saving queries as 'Views' allows you to save time and avoid repeating the same operation more than once.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
