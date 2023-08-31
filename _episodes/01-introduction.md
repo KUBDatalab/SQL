@@ -31,6 +31,8 @@ linked to each other when a field in one table can be matched to a field in anot
 table. SQL *queries* are the commands that let you look up data in a database or
 make calculations based on columns.
 
+![](fig/DB_diagram.png){alt='Entity relation diagram'}
+
 Data types help
 quality control of entries - you will receive an error if you try to enter a word
 into a field that should contain a number. Understanding the nature of relational
