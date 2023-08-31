@@ -2,21 +2,14 @@
 title: Filtering
 teaching: 20
 exercises: 10
----
-
-::::::::::::::::::::::::::::::::::::::: objectives
-
+objectives:
 - Write queries that `SELECT` data based on conditions, such as `AND`, `OR`, and `NOT`.
 - Understand how to use the `WHERE` clause in a statement.
 - Learn how to use comparison keywords such as `LIKE` in a statement.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: questions
-
+questions:
 - How can I filter data?
+---
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Filtering
 
@@ -70,28 +63,25 @@ Let's see what variations of the term we got. Notice uppercase and lowercase, th
 
 To learn more about other comparison keywords you can use, see Beginner SQL Tutorial on [SQL Comparison Keywords](https://beginner-sql-tutorial.com/sql-like-in-operators.htm).
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+
 
 ## Challenge
 
-Write a query that returns the `title`, `description`,  `release_year`
-for all movies and series that have "monty python" in the title or description.
+> Write a query that returns the `title`, `description`,  `release_year`
+> for all movies and series that have "monty python" in the title or description.
 
-:::::::::::::::  solution
+
 
 ## Solution
 
-```sql
-SELECT title, description, release_year
-FROM filmsAndSeries
-WHERE title LIKE "%Monty Python%" OR description like "%Monty Python%" ;
-```
+> >```sql
+> >SELECT title, description, release_year
+> >FROM filmsAndSeries
+> >WHERE title LIKE "%Monty Python%" OR description like "%Monty Python%" ;
+> >```
 
-:::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-You can continue to add or chain conditions together and write more advanced queries.
+> You can continue to add or chain conditions together and write more advanced queries.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
