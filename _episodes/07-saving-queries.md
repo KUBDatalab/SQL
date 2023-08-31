@@ -7,7 +7,7 @@ objectives:
 questions:
 - How can I save a query for future use?
 - How can I remove a saved query?
-keypoints
+keypoints:
 - Saving queries as 'Views' allows you to save time and avoid repeating the same operation more than once.
 ---
 
