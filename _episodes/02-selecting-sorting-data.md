@@ -5,22 +5,14 @@ exercises: 5
 keypoints:
 - SQL is ideal for querying databases
 - SQL queries have a basic query structure starting with `SELECT` field FROM table with additional keywords and criteria that can be used.
-
-
 objectives:
-
 - Understand how SQL can be used to query databases
 - Understand how to build queries, using SQL keywords such as `DISTINCT` and `ORDER BY`
-
-
-
 questions:
-
 - What is a query?
 - How do you query databases using SQL?
 - How do you retrieve unique values in SQL?
 - How do you sort results in SQL?
-
 ---
 
 ## What is a query?
