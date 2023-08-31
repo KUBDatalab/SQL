@@ -6,6 +6,8 @@ objectives:
 - Use Entity Relationship Diagrams to visualise and structure your data.
 questions:
 - What is database design?
+- keypoints:
+- Database design is helpful for creating more efficient databases.
 ---
 
 ## Spreadsheets
@@ -42,13 +44,13 @@ ERDs are helpful tools for visualising and structuring your data more efficientl
 
 ![](fig/DB_diagram.png){alt='Entity relation diagram'}
 
-Relationships between entities and their attributes are represented by lines linking them together. For example, the line linking journals and publishers is interpreted as follows: The 'journals' entity is related to the 'publishers' entity through the attributes 'PublisherId' and 'id' respectively.
+Relationships between entities and their attributes are represented by lines linking them together. For example, the line linking filmsAndSeries and genres is interpreted as follows: The 'filmsAndSeries' entity is related to the 'genres' entity through the attributes 'id' in both tables.
 
-Conceptually, we know that a journal has only one publisher but a publisher can publish many journals. This is known as a one-to-many relationship. In modeling relationships, we usually assign a unique identifier to the 'one' side of the relationship and use that same identifier to refer to that entity on the 'many' side. In 'publishers' table, the 'id' attribute is that unique identifier. We use that same identifier in the 'journals' table to refer to an individual publisher. That way, there is an unambiguous way for us to distinguish which journals are associated with which publisher in a way that keeps the integrity of the data (see the Normalization section below).
+Conceptually, we know that a movie or series can have several genres and each genre will have many many series and movies. This is known as a many-to-many relationship. 
 
 ## More Terminology
 
-The degree of relationship between entities is known as their 'cardinality'. Using the journals-publishers example, the 'publisheres' tble contains a primary key (PK) called 'id'. When the PK is used to create a connection between the original table and a different table, it is called a foreign key (FK) in the other table. To follow the example, we see a field in the 'journal' table called PublisherID that contains the values from the 'id' field in the 'publisher' table, connected the two tables.
+The degree of relationship between entities is known as their 'cardinality'. Using the filmsAndSeries - genres example, the 'filmsAndSeries' table contains a primary key (PK) called 'id'. When the PK is used to create a connection between the original table and a different table, it is called a foreign key (FK) in the other table. To follow the example, we see a field in the 'genres' table called id that contains the values from the 'id' field in the 'filmsAndSeries' table, connected the two tables.
 
 There are 4 main types of relationships between tables:
 
@@ -57,7 +59,7 @@ There are 4 main types of relationships between tables:
 - Many to One - many items in the first table is related to one item in the second table.
 - Many to Many - many items in the first table are related to many items in the second table.
 
-In our previous example of the 'PublisherID' field in the 'journals' table, the 'publisher' table has a one to many relationship with the journals table. This is because one publisher may publish many journals, so it will appear multiple times in that field.
+In our example of the 'id' field in the 'genres'  or 'productionCountries' tables has many to many relationship with the filmsAndSeries table. The 'code' in the 'countries' table has a one to one relationship with the 'country' field in the 'productionCountries' field.  
 
 A key attribute is often included when designing databases to facilitate joins.
 
@@ -65,41 +67,35 @@ A key attribute is often included when designing databases to facilitate joins.
 
 ERDs are helpful in normalising your data which is a process that can be used to create tables and establish relationships between those tables with the goal of eliminating redundancy and inconsistencies in the data.
 
-In the example ERD above, creating a separate table for publishers and linking to it from the journals table via PK and FK identifiers allows us to normalise the data and avoid inconsistencies. If we used one table, we could introduce publisher name errors such as misspellings or alternate names as demonstrated below.
+In the example ERD above, creating a separate table for countries and linking to it from the productionCountries table via PK and FK identifiers allows us to normalise the data and avoid inconsistencies. If we used one table, we could introduce country name errors such as misspellings or alternate names.
 
-![](fig/normalisation.png){alt='Introducting inconsistencies and normalising data'}
+
 
 There are a number of normal forms in the normalisation process that can help you reduce redundancy in database tables. [Study Tonight](https://www.studytonight.com/dbms/database-normalization.php) features tutorials where you can learn more about them.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
 
-## Identifying remaining inconsistencies in the ERD
 
-Are there other tables and relationships you can create to further normalise the data and avoid inconsistencies?
+> ## Identifying remaining inconsistencies in the ERD
 
-For this exercise, you can either use pencil/pen and paper to draw new tables and relationships or use [dbdiagram.io](https://dbdiagram.io/d/5cc32b0cf7c5bb70c72fc530) to modify the ERD above.
+> Are there other tables and relationships you can create to further normalise the data and avoid inconsistencies?
 
-:::::::::::::::  solution
 
-## Answers
+> >
 
-1. An 'authors' table can be created with a many-to-many relationship with the 'articles' table and an [associative entity](https://en.wikipedia.org/wiki/Associative_entity) or bridge table between them.
-2. A 'subjects' table can be created with a many-to-many relationship with the 'articles' table and a bridge table between them.
-  **Can you spot anything else?**
+> >## Answers
 
-:::::::::::::::::::::::::
+> > 1. Seperate tables for movies and series would solve the issue that the seasons field is only used for series.
+> > 2. A parentalGuidance table would solve the issue, that only some titles has an associated age_certification.
+> >  **Can you spot anything else?**
+> {:   solution}
+{: .challenge}
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 Additional database design tutorials to consult from Lucidchart:
 
 - [Database Structure and Design Tutorial](https://www.lucidchart.com/pages/database-diagram/database-design)
 - [What is an Entity Relationship Diagram](https://www.lucidchart.com/pages/er-diagrams)
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
-
-- Database design is helpful for creating more efficient databases.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
