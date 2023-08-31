@@ -28,7 +28,7 @@ What is interesting to note about this query is that we don't necessarily have t
 We can do this because sorting occurs earlier in the computational pipeline than field selection.
 
 
-
+> ## callout
 > ### The computer is basically doing this:
 
 > 1. Filtering rows according to WHERE
