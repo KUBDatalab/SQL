@@ -2,20 +2,15 @@
 title: Ordering and commenting
 teaching: 15
 exercises: 0
----
-
-::::::::::::::::::::::::::::::::::::::: objectives
-
+objectives:
 - Understand how to build queries, and the order in which to build the parts.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: questions
-
+questions:
 - What is the order of execution in SQL queries?
 - How can you organize and comment more complex SQL queries?
+keypoints:
+- Queries often have the structure: SELECT data FROM table WHERE certain criteria are present.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+---
 
 ## Order of execution
 
@@ -32,15 +27,15 @@ What is interesting to note about this query is that we don't necessarily have t
 
 We can do this because sorting occurs earlier in the computational pipeline than field selection.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
 
-## The computer is basically doing this:
 
-1. Filtering rows according to WHERE
-2. Sorting results according to ORDER BY
-3. Displaying requested columns or expressions.
+> ### The computer is basically doing this:
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+> 1. Filtering rows according to WHERE
+> 2. Sorting results according to ORDER BY
+> 3. Displaying requested columns or expressions.
+{: .callout}
+But for humans it is more intuitive first to specify which columns to display, then apply a filter and finaly specify an ordering.
 
 Clauses are written in a fixed order: `SELECT`, `FROM`, `WHERE`, then `ORDER BY`. It is possible to write a query as a single line, but for readability, we recommend to put each clause on its own line.
 
@@ -70,6 +65,8 @@ WHERE release_years IN (1989, 1993, 1991);
 We started with something simple, then added more clauses one by one, testing
 their effects as we went along.  For complex queries, this is a good strategy, to make sure you are getting what you want.  Sometimes it might help to take a subset of the data that you can easily see in a temporary database to practice your queries on before working on a larger or more complicated database.
 
+### Comments
+
 When the queries become more complex, it can be useful to add comments to express to yourself, or to others, what you are doing with your query. Comments help explain the logic of a section and provide context for anyone reading the query. It's essentially a way of making notes within your SQL. In SQL, comments begin using <code class="language-plaintext highlighter-rouge">\--</code> and end at the end of the line. To mark a whole paragraph as a comment, you can enclose it with the characters /\* and \*/. For example, a commented version of the above query can be written as:
 
 ```
@@ -85,10 +82,7 @@ WHERE release_year IN (1989, 1993, 1991);
 ```
 
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Queries often have the structure: SELECT data FROM table WHERE certain criteria are present.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
