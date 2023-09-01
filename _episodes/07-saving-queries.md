@@ -71,7 +71,7 @@ under the Database Structure tab.
 > > ORDER BY score DESC
 > > ```
 > {:.solution}
-{: .solution}
+{: .challenge}
 
 
 
