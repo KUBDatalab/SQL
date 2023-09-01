@@ -63,7 +63,8 @@ Also, if you would like to learn more SQL concepts and try additional challenges
 > > ON countries.code = productionCountries.country
 > > GROUP BY productionCountries.country
 > > ORDER BY n_movies DESC;
->
+> {: .solution}
+{: .challenge}
 
 
 > ## Challenge 4
@@ -77,4 +78,5 @@ Also, if you would like to learn more SQL concepts and try additional challenges
 > > FROM filmsAndSeries
 > > GROUP BY Licence;
 > > ```
->
+> {: .solution}
+{: .challenge}
