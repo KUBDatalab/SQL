@@ -76,7 +76,7 @@ To learn more about other comparison keywords you can use, see Beginner SQL Tuto
 
 
 
->> ## Solution
+> > ## Solution
 
 > >```sql
 > >SELECT title, description, release_year
@@ -89,6 +89,6 @@ To learn more about other comparison keywords you can use, see Beginner SQL Tuto
 > You can continue to add or chain conditions together and write more advanced queries.
 {: .challenge}
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 
