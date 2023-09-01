@@ -2,19 +2,14 @@
 title: Good Style
 teaching: 10
 exercises: 0
+objectives:
+- Understand the foundation for making clean, readable SQL queries.
+questions:
+- What is good SQL Style, and how can I abide by SQL conventions?
+keypoints:
+- There are many ways to write an SQL queries, but some look better than others.
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
-
-- Understand the foundation for making clean, readable SQL queries.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: questions
-
-- What is good SQL Style, and how can I abide by SQL conventions?
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## An Introduction to good style
 
@@ -51,10 +46,5 @@ ORDER BY C
 
 In some programs (such as MySQL), there will be tools that can automatically "beautify" your code for better readability.
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
-
-- There are many ways to write an SQL queries, but some look better than others.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
