@@ -70,22 +70,17 @@ To learn more about other comparison keywords you can use, see Beginner SQL Tuto
 
 
 > ## Challenge
-
+> 
 > Write a query that returns the `title`, `description`,  `release_year`
 > for all movies and series that have "monty python" in the title or description.
-
-
-
 > > ## Solution
-
+> > 
 > >```sql
 > >SELECT title, description, release_year
 > >FROM filmsAndSeries
 > >WHERE title LIKE "%Monty Python%" OR description like "%Monty Python%" ;
 > >```
 > {: .solution}
-
-
 > You can continue to add or chain conditions together and write more advanced queries.
 {: .challenge}
 
