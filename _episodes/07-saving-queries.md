@@ -53,14 +53,12 @@ under the Database Structure tab.
 
 
 > ## Challenge
-
+> 
 > Write a `CREATE VIEW` query that `JOINS` the `filmsAndSeries` table with the
 > `productionCountries` table on `id` and returns the `AVG` of imdb_score
 > grouped by the `Country` in `DESC` order.
-
-
 > > ## Solution
-
+> > 
 > > ```sql
 > > CREATE VIEW scores_by_country AS
 > > SELECT countries.country, AVG(filmsAndSeries.imdb_score) as score
