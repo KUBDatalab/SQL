@@ -63,13 +63,10 @@ The `ROUND` function allows us to round the score number returned by the `AVG` f
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 > ## Challenge
-
+> 
 > Write a query that `JOINS` the `genres` and `filmAndSeries` tables and that returns the `genre`, total number of series and average number seasons for every genre.
-
-
-
 > > ## Solution
-
+> > 
 > > ```sql
 > > SELECT genres.genre, count(*), avg(filmsAndSeries.seasons)
 > > FROM filmsAndSeries
@@ -94,12 +91,11 @@ ON productionCountries.id = genres.id;
 
 
 > ## Challenge:
-
+> 
 > Write a query that returns the `title`, number of
 > production countries, number of genres, ordered by number of production countries in descending order.
-
 > > ## Solution
-
+> > 
 > > ```sql
 > > SELECT filmsAndSeries.title, COUNT(DISTINCT productionCountries.Country), COUNT(DISTINCT genres.genre)
 > > FROM filmsAndSeries
