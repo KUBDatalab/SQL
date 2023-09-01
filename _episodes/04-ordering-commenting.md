@@ -30,11 +30,11 @@ We can do this because sorting occurs earlier in the computational pipeline than
 
 > ## callout
 > ### The computer is basically doing this:
-
 > 1. Filtering rows according to WHERE
 > 2. Sorting results according to ORDER BY
 > 3. Displaying requested columns or expressions.
 {: .callout}
+
 But for humans it is more intuitive first to specify which columns to display, then apply a filter and finaly specify an ordering.
 
 Clauses are written in a fixed order: `SELECT`, `FROM`, `WHERE`, then `ORDER BY`. It is possible to write a query as a single line, but for readability, we recommend to put each clause on its own line.
