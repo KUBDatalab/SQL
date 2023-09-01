@@ -76,14 +76,10 @@ There are a number of normal forms in the normalisation process that can help yo
 
 
 > ## Identifying remaining inconsistencies in the ERD
-
+> 
 > Are there other tables and relationships you can create to further normalise the data and avoid inconsistencies?
-
-
-> >
-
 > >## Answers
-
+> >
 > > 1. Seperate tables for movies and series would solve the issue that the seasons field is only used for series.
 > > 2. A parentalGuidance table would solve the issue, that only some titles has an associated age_certification.
 > >  **Can you spot anything else?**
