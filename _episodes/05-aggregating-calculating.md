@@ -42,9 +42,11 @@ ORDER BY AVG(imdb_score) DESC;
 ```
 
 > ## Challenge
+> 
 > Write a query using an aggregate function that returns the number of movies per year, sorted by title count in descending order. Which year has the most titles?  (Hint to choosing which aggregate
 > function to use - it is one of the common aggregate functions `MAX, MIN, AVG, COUNT, SUM`.)
 > > ## Solution
+> > 
 > > ```sql
 > > SELECT release_year, COUNT(title)
 > > FROM filmsAndSeries
@@ -77,10 +79,11 @@ Note that `HAVING` comes *after* `GROUP BY`. One way to think about this is: the
 
 
 > ## Challenge
+> 
 > Write a query that returns year and average `imdb_score` from the `filmsAndSeries` table, the average `imdb_score` for each release year
 > but only for the years with an average score større end eller lig med 5.
-
 > > ## Solution
+> > 
 > > ```sql
 > > SELECT release_year, AVG(imdb_score)
 > > FROM filsAndSeries
