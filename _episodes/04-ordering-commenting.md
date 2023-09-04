@@ -9,7 +9,6 @@ questions:
 - How can you organize and comment more complex SQL queries?
 keypoints:
 - Queries often have the structure: SELECT data FROM table WHERE certain criteria are present.
-
 ---
 
 ## Order of execution
