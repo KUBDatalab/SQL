@@ -6,7 +6,7 @@ objectives:
 - Use Entity Relationship Diagrams to visualise and structure your data.
 questions:
 - What is database design?
-- keypoints:
+keypoints:
 - Database design is helpful for creating more efficient databases.
 ---
 
