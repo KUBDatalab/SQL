@@ -60,7 +60,7 @@ GROUP BY genres.genre;
 
 The `ROUND` function allows us to round the score number returned by the `AVG` function by 2 decimal places.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+
 
 > ## Challenge
 > 
