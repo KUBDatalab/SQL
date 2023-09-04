@@ -18,7 +18,7 @@ Have a look at the following questions; these questions are written in plain Eng
 
 Also, if you would like to learn more SQL concepts and try additional challenges, see the [Software Carpentry Databases and SQL](https://swcarpentry.github.io/sql-novice-survey/) lesson.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+
 
 > ## Challenge 1
 > 
@@ -63,6 +63,7 @@ Also, if you would like to learn more SQL concepts and try additional challenges
 > > ON countries.code = productionCountries.country
 > > GROUP BY productionCountries.country
 > > ORDER BY n_movies DESC;
+> > ```
 > {: .solution}
 {: .challenge}
 
