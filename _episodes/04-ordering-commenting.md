@@ -38,7 +38,7 @@ But for humans it is more intuitive first to specify which columns to display, t
 
 Clauses are written in a fixed order: `SELECT`, `FROM`, `WHERE`, then `ORDER BY`. It is possible to write a query as a single line, but for readability, we recommend to put each clause on its own line.
 
-## Complex queries \& commenting
+## Complex queries & commenting
 
 The goal is to make a query easy to read and understand, even when the logic becomes complex. This can be handled in two ways:
 
