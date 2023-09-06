@@ -31,7 +31,7 @@ linked to each other when a field in one table can be matched to a field in anot
 table. SQL *queries* are the commands that let you look up data in a database or
 make calculations based on columns.
 
-<img src = "https://raw.githubusercontent.com/KUBDatalab/SQL/abfdef7f0555ca6c730b275020634e4698a593e8/_episodes/fig/SQL_terms.png" alt="Entity relation diagram" />
+<img src = "https://raw.githubusercontent.com/KUBDatalab/SQL/abfdef7f0555ca6c730b275020634e4698a593e8/_episodes/fig/DB_diagram.png" alt="Entity relation diagram" />
 
 Data types help
 quality control of entries - you will receive an error if you try to enter a word
