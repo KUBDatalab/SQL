@@ -24,20 +24,12 @@ Designing a relational database for your data can help reduce the places where t
 Database design involves a model or plan developed to determine how the data is stored, organized and manipulated. The design addresses what data will be stored, how they will be classified, and the interrelationships between the data across different tables in the database.
 
 ## Terminology
-![](SQL_terms.png)
-![](/fig/SQL_terms.png)
-![](./fig/SQL_terms.png)
-![](../fig/SQL_terms.png)
-![](../../fig/SQL_terms.png)
-![](fig/doaj-spreadsheet.png)
 
-![terminology](fig/SQL_terms.png)
 
-<img src = "fig/SQL_terms.png" width = "800"/>
 
-<img src = "https://raw.githubusercontent.com/KUBDatalab/SQL/abfdef7f0555ca6c730b275020634e4698a593e8/_episodes/fig/SQL_terms.png" width = "800" />
+<img src = "https://raw.githubusercontent.com/KUBDatalab/SQL/abfdef7f0555ca6c730b275020634e4698a593e8/_episodes/fig/SQL_terms.png"  />
 
-<img src = "https://github.com/KUBDatalab/SQL/blob/gh-pages/_episodes/fig/SQL_terms.png" width = "800" />
+
 In the [Introduction to SQL](01-introduction.md) lesson, we introduced the terms "fields", "records", and "values". These terms are commonly used in databases while the "columns", "rows", and "cells" terms are more common in spreadsheets. Fields store a single kind of information (text, integers, etc.) related to one topic (title, year, etc.), while records are a set of fields containing specific values related to one item in your database (a movie, a country, etc.).
 
 To design a database, we must first decide what kinds of things we want to represent as tables. A table is the physical manifestation of a kind of "entity". An entity is the conceptual representation of the thing we want to store informtation about in the database, with each row containing information about one entity. An entity has "attributes" that describe it, represented as fields. For example, a movie or a series is an entity. Attributes would be things like the title, or scores which would appear as fields.
@@ -51,11 +43,11 @@ It is useful to describe on an abstract level the entities we would like to capt
 
 ERDs are helpful tools for visualising and structuring your data more efficiently. They allow you to map relationships between concepts and ultimately construct a relational database. The following is an ERD of the database used in this lesson:
 
-![erd](fig/articles-erd.png)
 
-<img src = "https://raw.githubusercontent.com/KUBDatalab/SQL/abfdef7f0555ca6c730b275020634e4698a593e8/_episodes/fig/DB_diagram.png" width = "800" />
 
-![db diagram](fig/DB_diagram.png)
+<img src = "https://raw.githubusercontent.com/KUBDatalab/SQL/abfdef7f0555ca6c730b275020634e4698a593e8/_episodes/fig/DB_diagram.png"  />
+
+
 Relationships between entities and their attributes are represented by lines linking them together. For example, the line linking filmsAndSeries and genres is interpreted as follows: The 'filmsAndSeries' entity is related to the 'genres' entity through the attributes 'id' in both tables.
 
 Conceptually, we know that a movie or series can have several genres and each genre will have many many series and movies. This is known as a many-to-many relationship. 
