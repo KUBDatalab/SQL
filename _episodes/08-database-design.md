@@ -25,7 +25,10 @@ Database design involves a model or plan developed to determine how the data is 
 
 ## Terminology
 
+![terminology](/fig/SQL_terms.png)
 ![terminology](./fig/SQL_terms.png)
+![terminology](../fig/SQL_terms.png)
+![terminology](fig/SQL_terms.png)
 
 <img src = "fig/SQL_terms.png" />
 
