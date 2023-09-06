@@ -29,6 +29,7 @@ Database design involves a model or plan developed to determine how the data is 
 ![terminology](./fig/SQL_terms.png)
 ![terminology](../fig/SQL_terms.png)
 ![terminology](../../fig/SQL_terms.png)
+![](fig/doaj-spreadsheet.png){alt='OpenRefine DOAJ Sample Article Data'}
 
 ![terminology](fig/SQL_terms.png)
 
