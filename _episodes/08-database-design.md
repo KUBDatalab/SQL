@@ -24,12 +24,12 @@ Designing a relational database for your data can help reduce the places where t
 Database design involves a model or plan developed to determine how the data is stored, organized and manipulated. The design addresses what data will be stored, how they will be classified, and the interrelationships between the data across different tables in the database.
 
 ## Terminology
-![terminology local](SQL_terms.png)
-![terminology](/fig/SQL_terms.png)
-![terminology](./fig/SQL_terms.png)
-![terminology](../fig/SQL_terms.png)
-![terminology](../../fig/SQL_terms.png)
-![](fig/doaj-spreadsheet.png){alt='OpenRefine DOAJ Sample Article Data'}
+![](SQL_terms.png)
+![](/fig/SQL_terms.png)
+![](./fig/SQL_terms.png)
+![](../fig/SQL_terms.png)
+![](../../fig/SQL_terms.png)
+![](fig/doaj-spreadsheet.png)
 
 ![terminology](fig/SQL_terms.png)
 
