@@ -25,9 +25,9 @@ Database design involves a model or plan developed to determine how the data is 
 
 ## Terminology
 
-![terminology](/fig/SQL_terms.png)
+![terminology](fig/SQL_terms.png)
 
-<img src = "/fig/SQL_terms.png" />
+<img src = "fig/SQL_terms.png" />
 
 <img src = "https://github.com/KUBDatalab/SQL/blob/gh-pages/_episodes/fig/SQL_terms.png" />
 In the [Introduction to SQL](01-introduction.md) lesson, we introduced the terms "fields", "records", and "values". These terms are commonly used in databases while the "columns", "rows", and "cells" terms are more common in spreadsheets. Fields store a single kind of information (text, integers, etc.) related to one topic (title, year, etc.), while records are a set of fields containing specific values related to one item in your database (a movie, a country, etc.).
