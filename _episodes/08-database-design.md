@@ -43,7 +43,7 @@ It is useful to describe on an abstract level the entities we would like to capt
 
 ERDs are helpful tools for visualising and structuring your data more efficiently. They allow you to map relationships between concepts and ultimately construct a relational database. The following is an ERD of the database used in this lesson:
 
-
+![erd](fig/articles-erd.png)
 
 ![db diagram](fig/DB_diagram.png)
 Relationships between entities and their attributes are represented by lines linking them together. For example, the line linking filmsAndSeries and genres is interpreted as follows: The 'filmsAndSeries' entity is related to the 'genres' entity through the attributes 'id' in both tables.
