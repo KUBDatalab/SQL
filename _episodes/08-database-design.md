@@ -53,6 +53,8 @@ ERDs are helpful tools for visualising and structuring your data more efficientl
 
 ![erd](fig/articles-erd.png)
 
+<img src = "https://raw.githubusercontent.com/KUBDatalab/SQL/abfdef7f0555ca6c730b275020634e4698a593e8/_episodes/fig/DB_diagram.png" width = "800" />
+
 ![db diagram](fig/DB_diagram.png)
 Relationships between entities and their attributes are represented by lines linking them together. For example, the line linking filmsAndSeries and genres is interpreted as follows: The 'filmsAndSeries' entity is related to the 'genres' entity through the attributes 'id' in both tables.
 
