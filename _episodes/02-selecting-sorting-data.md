@@ -21,7 +21,7 @@ A query is a question or request for data. For example, "How many journals does 
 
 ## Writing my first query
 
-Let's start by opening DB Browser for SQLite and the imdb database (see Setup). Choose `Browse Data` and the `moviesAndSeries` table. The moviesAndSeries table contains columns or fields such as `title`, `type`, `description`, `release_year`, etc.
+Let's start by opening DB Browser for SQLite and the imdb database (see Setup). Choose `Browse Data` and the `filmsAndSeries` table. The moviesAndSeries table contains columns or fields such as `title`, `type`, `description`, `release_year`, etc.
 
 Let's write a SQL query that selects only the `title` column from the `filsAndSeries` table.
 
