@@ -50,7 +50,7 @@ ERDs are helpful tools for visualising and structuring your data more efficientl
 
 Relationships between entities and their attributes are represented by lines linking them together. For example, the line linking filmsAndSeries and genres is interpreted as follows: The 'filmsAndSeries' entity is related to the 'genres' entity through the attributes 'id' in both tables.
 
-Conceptually, we know that a movie or series can have several genres and each genre will have many many series and movies. This is known as a many-to-many relationship. 
+Conceptually, we know that a movie or series can have several genres and each genre will have many series and movies. This is known as a many-to-many relationship. 
 
 ## More Terminology
 
