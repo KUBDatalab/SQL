@@ -111,7 +111,7 @@ ORDER BY tmdb_score DESC, release_year ASC;
 > ## Challenge
 > 
 > Write a query that returns `Title`, `imdb_score`, `release_year` and `imdb_votes` from
-> the filmsAndSeries table, ordered by the top number of votes and alphabetically by title.
+> the filmsAndSeries table, ordered by the number of votes with the highest number first and alphabetically by title.
 > > ## Solution
 > > 
 > > ```sql
