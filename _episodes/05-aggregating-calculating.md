@@ -12,7 +12,7 @@ keypoints:
 - Queries can do arithmetic operations on field values.
 ---
 
-## Aggregation
+## Functions
 
 SQL contains functions which allow you to make calculations on data in your database. 
 Some of the most common functions are `MAX, MIN, AVG, COUNT, SUM`, and they will: 
@@ -21,6 +21,17 @@ Some of the most common functions are `MAX, MIN, AVG, COUNT, SUM`, and they will
 `AVG` (find the average value of a field), 
 `COUNT` (count the number of values in a field and present the total), and 
 `SUM` (add up the values in a field and present the sum).
+
+For instance, we can find the number of items in a table with this query:
+
+```sql
+SELECT COUNT(*)
+FROM filmsAndSeries
+```
+
+
+## Aggregation
+
 
 Let's say we wanted to get the average `tmdb_score` and `imdb_score` for each  `release_year`. We can use `AVG` and the `GROUP BY` clause in a query:
 
