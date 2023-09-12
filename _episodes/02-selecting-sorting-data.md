@@ -65,7 +65,14 @@ FROM filmsandseries;
 
 
 ## Comments
-When the queries become more complex, it can be useful to add comments to express to yourself, or to others, what you are doing with your query. Comments help explain the logic of a section and provide context for anyone reading the query. It’s essentially a way of making notes within your SQL. In SQL, comments begin using -- and end at the end of the line. To mark a whole paragraph as a comment, you can enclose it with the characters /* and */. For example, a commented version of the above query can be written as:
+When the queries become more complex, it is good style to add comments to explain to yourself, or to others, what you are doing with your query. Comments help explain the logic of a section and provide context for anyone reading the query. It’s essentially a way of making notes within your SQL. In SQL, comments begin using -- and end at the end of the line. To mark a whole paragraph as a comment, you can enclose it with the characters /* and */. For example, a commented version of the above query can be written as:
+
+```
+-- We are only interested in the title
+SELECT title
+-- which we can find in the table filmsAndSeries
+FROM filmsAndSeries
+```
 
 ## Unique values
 
