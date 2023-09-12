@@ -51,7 +51,7 @@ FROM filmsandseries;
 If we want more information, we can add a new column to the list of fields right after `SELECT`:
 
 ```sql
-SELECT Title, Year
+SELECT Title, release_year
 FROM filmsAndSeries;
 ```
 
