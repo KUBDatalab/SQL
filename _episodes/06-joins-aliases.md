@@ -64,7 +64,7 @@ The `ROUND` function allows us to round the score number returned by the `AVG` f
 
 > ## Challenge
 > 
-> Write a query that `JOINS` the `genres` and `filmAndSeries` tables and that returns the `genre`, total number of series and average number seasons for every genre.
+> Write a query that `JOINS` the `genres` and `filmsAndSeries` tables and that returns the `genre`, total number of series and average number seasons for every genre.
 > > ## Solution
 > > 
 > > ```sql
