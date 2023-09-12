@@ -29,7 +29,7 @@ Let's write a SQL query that selects only the `title` column from the `filmsAndS
 SELECT title
 FROM filmsAndSeries;
 ```
-
+Note the order is important. First SELECT, then FROM.
 
 If we want more information, we can add a new column to the list of fields right after `SELECT`:
 
