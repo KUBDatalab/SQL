@@ -30,6 +30,21 @@ SELECT title
 FROM filmsAndSeries;
 ```
 
+
+If we want more information, we can add a new column to the list of fields right after `SELECT`:
+
+```sql
+SELECT Title, release_year
+FROM filmsAndSeries;
+```
+
+Or we can select all of the columns in a table using the wildcard `*`.
+
+```sql
+SELECT *
+FROM filmsAndSeries;
+```
+
 ## Capitalization and good style
 
 In the first query above, we have capitalized the words `SELECT` and `FROM` because they are SQL keywords. Even though capitalization makes no difference to the SQL interpreter, capitalization of these SQL terms helps for readability and is therefore considered good style. As you write and expand your own queries, it might be helpful to pick an option, such as [CamelCase](https://en.wikipedia.org/wiki/Camel_case), and use that style when naming tables and columns. Some tables and columns require capitalization and some do not. An occasional change of capitalization for these table and column names may be needed.
@@ -48,19 +63,9 @@ SELECT Title
 FROM filmsandseries;
 ```
 
-If we want more information, we can add a new column to the list of fields right after `SELECT`:
 
-```sql
-SELECT Title, release_year
-FROM filmsAndSeries;
-```
-
-Or we can select all of the columns in a table using the wildcard `*`.
-
-```sql
-SELECT *
-FROM filmsAndSeries;
-```
+## Comments
+When the queries become more complex, it can be useful to add comments to express to yourself, or to others, what you are doing with your query. Comments help explain the logic of a section and provide context for anyone reading the query. It’s essentially a way of making notes within your SQL. In SQL, comments begin using -- and end at the end of the line. To mark a whole paragraph as a comment, you can enclose it with the characters /* and */. For example, a commented version of the above query can be written as:
 
 ## Unique values
 
